@@ -22,12 +22,23 @@
 </head>
 <body>
 <header class="">
-    <?php include('top-bar.php');
+    <?php 
+    include('top-bar.php');
+    include("../config.php");
     ?>
 </header>
 <main class="mx-auto p-0 row col-12">
     <!-- Main Left section with the navigation -->
-    <?php include('user_panel\navigation.php'); ?>
+    <?php 
+    if ($result = $conn -> query("SELECT Username, Privileges FROM users WHERE Username = '".$_SESSION['user']."' AND Privileges = 'moderator'  ")) {
+        if($result -> num_rows>0){
+            include('user_panel\navigation.php');
+        }
+        else {
+            include('navigation.php');
+        }
+    }
+    ?>
     <!--Main Right Section -->
     <?php
     if(isset($_GET['page'])){
