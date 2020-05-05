@@ -18,4 +18,6 @@ Database name | Database tables| Column1 | Column2 | Column3 | Column4 | Column5
 You can download the empty database in order to set up fast your enviroment faster from this link:
 https://drive.google.com/open?id=1hWvvAFXZ5FXkdbnkqf6OLz-YKjhzkssb
 
-<h2>In order to login trought the login section, please use the default</h2> <h3>**user:** admin</h3> <h3>**password:** 12345</h3>
+<h2>In order to login trought the login section, please use the default</h2> 
+<h3>Username: admin</h3>
+<h3>Password: 12345</h3>
