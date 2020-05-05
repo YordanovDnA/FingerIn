@@ -1,0 +1,67 @@
+.text-black{
+    color: #121416 ;
+}
+.text-black:hover{
+    color: #121416 ;
+}
+.rg-lg-form{
+    width: 360px;
+}
+
+.admin-nav-text{
+
+    font-size: 13px ;
+}
+.icon-size{
+
+    font-size: 20px;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+section{
+    height: 100vh;
+}
+
+section>nav>ul>li:hover{
+    background-color: #f2f2f2;
+}
+
+input{
+    font-size: 10px !important;
+}
+#dbtext{
+    z-index: 1;
+}
+
+#show {
+    opacity: 0;
+    animation: 1s show ease-in-out ;
+    animation-duration: 15s;
+  }
+  
+  @keyframes show {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity:1; }
+    100% { opacity: 0; }
+  }
+
+.item {
+    font-size: 20px;
+    color: #28a745;
+    animation: 1s bell-vibrate ease-in-out infinite ;
+  }
+  
+  @keyframes bell-vibrate {
+    0% { transform: rotate(0); opacity:0; }
+    4% { transform: rotate(8deg); color:#dc3545; opacity: 1; }
+    8% { transform: rotate(-8deg); }
+    12% { transform: rotate(8deg); }
+    16% { transform: rotate(-8deg); }
+    20% { transform: rotate(0); }
+    100% { transform: rotate(0); }
+  }
