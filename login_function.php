@@ -13,7 +13,7 @@
             }
             else {
                 echo "This user doesn't exist. Please, try again.";
-                echo '<a href="login.php">Back</a>';
+                echo '<a href="login.html">Back</a>';
             }
         }
             

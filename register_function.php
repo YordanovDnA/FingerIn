@@ -6,7 +6,7 @@
 
     $sql = "INSERT INTO users (Username, Password, Email) values('$username', '$password', '$email')";
     if($conn->query($sql) === TRUE){
-        header("Location: index.php");
+        header("Location: index.html");
     }
     else{
         "Something is wrong!";

@@ -41,7 +41,7 @@
             include('users.php');
         }
     }else{
-        include('dashboard.php'); 
+        include('dashboard.html'); 
     }?>
 </main>
 </body>

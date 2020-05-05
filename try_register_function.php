@@ -24,7 +24,7 @@
         $_POST['password'] === $_POST['rpassword'] ){
             $sql = "INSERT INTO users (Username, Password) values('$usernameadd', '$passwordadd')";  
             if($conn->query($sql) === TRUE){
-                header("Location: index.php");
+                header("Location: index.html");
             }
             else{
                 echo "Error: " .$conn->error;
