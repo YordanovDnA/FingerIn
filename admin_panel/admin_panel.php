@@ -27,12 +27,15 @@
 </header>
 <main class="mx-auto p-0 row col-12">
     <!-- Main Left section with the navigation -->
-    <?php include('navigation.php'); ?>
+    <?php include(' user_panel\navigation.php'); ?>
     <!--Main Right Section -->
     <?php
     if(isset($_GET['page'])){
         if($_GET['page'] === "site"){
             include('register_site.php');
+        }
+        if($_GET['page'] === "staff"){
+            include('user_panel/register_staff.php');
         }
         if($_GET['page'] === "users"){
             include('users.php');
