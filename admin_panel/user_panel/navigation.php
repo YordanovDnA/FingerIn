@@ -39,11 +39,11 @@
                     </div>
                     <div class="dropdown-menu">
                         <!-- Including all created construction staffs -->
-                        <div id="newStaff" class=""></div>
+                        <div id="newSites" class=""></div>
                         <script>
                             $(document).ready(function(){
                                 setInterval(function(){
-                                    $("#newStaff").load("/user_panel/nav_staff.php");
+                                    $("#newSites").load("nav_staff.php");
                                     refresh();
                                 }, 1000);
                             });
