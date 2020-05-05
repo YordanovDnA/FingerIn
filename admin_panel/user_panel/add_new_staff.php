@@ -12,6 +12,7 @@
     if($_SERVER['REQUEST_METHOD'] == "POST"){
         $preNewStaffNameAdd = preg_replace('/\s+/','',$_POST['newStaffName']);
         $newStaffNameAdd = strtolower($preNewStaffNameAdd);
+        $AddedBy = $_POST['AddedBy'];
         
         if(empty($_POST['newStaffName'])){
             $newStaffNameErr = "*Required!";
@@ -20,8 +21,8 @@
         if(!empty($_POST['newStaffName']) ){
                 /*When all field are correctly filled this code will execute
                 appending the information into the staff database*/
-                $sql = "INSERT INTO staff (CompanyName, DatabaseName)
-                values('".$_POST['newStaffName']."', '$newStaffNameAdd')";  
+                $sql = "INSERT INTO staff (CompanyName, DatabaseName, AddedBy)
+                values('".$_POST['newStaffName']."', '$newStaffNameAdd', '$AddedBy')";  
                 if($conn->query($sql) === TRUE){
                     //Success Alert when registration is success
                     $alertSuccess = '<div class="position-absolute col-12  text-center alert alert-success alert-dismissible">

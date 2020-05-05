@@ -13,6 +13,7 @@
                     <a href="#" data-toggle="popover" data-placement="right" title="New name" data-content="Type the new company name here."><i class="far fa-question-circle text-success"></i></a>
                 </lable>
                 <input style="font-size: 13px" type="text" class="form-control <?php echo $requiredNewName ; ?>" name="newStaffName" placeholder="Name:">
+                <?php echo '<input name="AddedBy" value="'.$_SESSION['user'].'" type="hidden"  >'; ?>
                 <div class="text-danger pl-1 small"><?php echo  $newStaffNameErr ; ?></div>
             </div>
             <input class="btn btn-success rounded" type="submit" value="Submit">
