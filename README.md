@@ -21,3 +21,12 @@ https://drive.google.com/open?id=1hWvvAFXZ5FXkdbnkqf6OLz-YKjhzkssb
 <h2>In order to login trought the login section, please use the default</h2> 
 <h3>Username: admin</h3>
 <h3>Password: 12345</h3>
+
+<h2 align="center">Hardware</h2>
+For fingerprint scanning we are using Dollatek optical fingerprint scanner with Arduino Uno WiFi Rev2. 
+
+Links: 
+
+Dollatek optical scanner - https://www.amazon.co.uk/gp/product/B07PRMXXXN/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&psc=1
+
+Arduino Uno Wifi Rev2 - https://store.arduino.cc/arduino-uno-wifi-rev2
