@@ -31,4 +31,4 @@ Dollatek optical scanner - https://www.amazon.co.uk/gp/product/B07PRMXXXN/ref=pp
 
 Arduino Uno Wifi Rev2 - https://store.arduino.cc/arduino-uno-wifi-rev2
 
-Arduino project: "Link"
+Arduino project: "Here past the link"
