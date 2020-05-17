@@ -33,13 +33,14 @@
                         </ul>
                     </div>
                     <div class="col-10 d-flex justify-content-end">
-                        <a href="login.html" class="mr-5">Login</a>
+
+                        <a href="login.html" class="p-2 text-success"><i class="fas fa-tachometer-alt  text-dark mr-1"></i>Dashboard</a>
+
+                        <a href="login.html" class="p-2 mr-5 text-danger rounded"><i class="fas fa-door-open text-dark"></i>Exit</a>
                     </div>
             </nav>
         </header>
-            <main class="">
-                
-            </main>
+            <?php include "main.php" ?>
             <footer class="">
             
             </footer>

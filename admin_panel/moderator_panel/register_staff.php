@@ -1,7 +1,7 @@
 
 <div class="col-10">
 
-    <?php include('user_panel\add_new_staff.php'); ?>
+    <?php include('moderator_panel\add_new_staff.php'); ?>
     <?php echo $alertSuccess ; ?>
     <div class="rg-lg-form mx-auto">
         <h5 class="text-center text-success mt-5">Add new construction staff</h5>

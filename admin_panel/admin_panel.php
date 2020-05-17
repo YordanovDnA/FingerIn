@@ -32,9 +32,16 @@
     <?php 
     if ($result = $conn -> query("SELECT Username, Privileges FROM users WHERE Username = '".$_SESSION['user']."' AND Privileges = 'moderator'  ")) {
         if($result -> num_rows>0){
-            include('user_panel\navigation.php');
+            include('moderator_panel\navigation.php');
         }
-        else {
+    }
+    if($result = $conn -> query("SELECT Username, Privileges FROM users WHERE Username = '".$_SESSION['user']."' AND Privileges = 'user'")){
+        if($result -> num_rows>0){
+            include('user_panel/navigation.php');
+        }
+    }
+    if($result = $conn -> query("SELECT Username, Privileges FROM users Where Username = '".$_SESSION['user']."' AND Privileges = 'admin' ")){
+        if($result -> num_rows>0){
             include('navigation.php');
         }
     }
@@ -46,7 +53,7 @@
             include('register_site.php');
         }
         if($_GET['page'] === "staff"){
-            include('user_panel\register_staff.php');
+            include('moderator_panel\register_staff.php');
         }
         if($_GET['page'] === "users"){
             include('users.php');
