@@ -68,3 +68,10 @@ input{
 .hover-light:hover{
     background-color: white;
 }
+
+.logo-size{
+    font-size:30px;
+}
+.logo-text-size{
+    font-size:26px;
+}

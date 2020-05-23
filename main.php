@@ -6,7 +6,16 @@
     ?>
     <!--Main Right Section -->
     <section class="col-10">
-        <?php include('login.html'); ?>
+        <?php
+        if(isset($_GET['page'])){
+            if($_GET['page']== 'signin'){
+                include('login.html');
+            }
+            if($_GET['page'] == 'signup'){
+                include('register.html');
+            }
+        }
+         ?>
      </section>
     <?php
         //include('dashboard.html');
