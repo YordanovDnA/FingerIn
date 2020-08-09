@@ -11,13 +11,28 @@
             if($_GET['page']== 'signin'){
                 include('login.html');
             }
-            if($_GET['page'] == 'signup'){
+            elseif ($_GET['page'] =="signup") {
                 include('register.html');
             }
+            elseif ($_GET['page']=='news') {
+                include('news.html');
+            }
+            elseif ($_GET['page']=='start') {
+                include('start.html');
+            }
+            elseif ($_GET['page']=='plans') {
+                include('plans.html');
+            }
+            elseif ($_GET['page']=='shop') {
+                include('shop.html');
+            }
+            elseif ($_GET['page']=='home') {
+                include('home.html');
+            }
+        }
+        else{
+            include('home.html');
         }
          ?>
      </section>
-    <?php
-        //include('dashboard.html');
-    ?>
 </main>

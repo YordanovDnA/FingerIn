@@ -55,11 +55,11 @@
         if($_GET['page'] === "staff"){
             include('moderator_panel\register_staff.php');
         }
-        if($_GET['page'] === "users"){
+        if($_GET['page'] === "team"){
             include('users.php');
         }
     }else{
-        include('dashboard.html'); 
+        include('dashboard.php'); 
     }?>
 </main>
 </body>

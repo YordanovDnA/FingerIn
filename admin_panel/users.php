@@ -19,7 +19,7 @@
     <table class="mx-auto table table-bordered col-11 mt-5 ml-1 mr-1">
         <th class="">ID</th>
         <th class="">Username</th>
-        <th class="">Site Name</th>
+        <th class="">Project Name</th>
         <th class="">Password</th>
         <th class="">Email</th>
         <?php 

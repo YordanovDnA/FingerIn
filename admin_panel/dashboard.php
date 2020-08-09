@@ -1,7 +1,7 @@
-
 <section class="col-10 row">
     <div class="p-2  col-6">
         <div class="container b-success mt-4 p-3 col-5 shadow rounded">
+            <h2 class="text-center border border-top-0">Site name</h2>
             <h5 class="text-center mt-3">People on site:</h5>
             <div class="container col-6">
                 <h5 class="display-4 text-center text-success">22</h5>

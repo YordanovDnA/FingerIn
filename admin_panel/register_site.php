@@ -1,16 +1,15 @@
-
 <div class="col-10">
 
     <?php include('add_new_site.php'); ?>
     <?php echo $alertSuccess ; ?>
     <div class="rg-lg-form mx-auto">
-        <h5 class="text-center text-success mt-5">Add new construction site</h5>
-        <p class="text-center small">Here you can add new construction site and create user for it. </p>
+        <h5 class="text-center text-success mt-5">Add new project</h5>
+        <p class="text-center small">Here you can add new project and create user for it. </p>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']),'?page=site' ?>" class="bg-light shadow mt-5 p-2 rounded small" method="POST">
             <h5 class="text-center">Register</h5>
             <div class="form-group">
-                <lable for="newSiteName">Construction site name:
-                    <a href="#" data-toggle="popover" data-placement="right" title="New name" data-content="Type the new constructions site name here."><i class="far fa-question-circle text-success"></i></a>
+                <lable for="newSiteName">Project name:
+                    <a href="#" data-toggle="popover" data-placement="right" title="New name" data-content="Type the new project name here."><i class="far fa-question-circle text-success"></i></a>
                 </lable>
                 <input style="font-size: 13px" type="text" class="form-control <?php echo $requiredNewName ; ?>" name="newSiteName" placeholder="Name:">
                 <div class="text-danger pl-1 small"><?php echo  $newSiteNameErr ; ?></div>

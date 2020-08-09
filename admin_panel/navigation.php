@@ -16,7 +16,7 @@
                     }
                     ?>">Dashboard</a>
                 </li>
-                <!-- Construction sites toggle buttons -->
+                <!-- Projects toggle buttons -->
                 <li class="nav-item dropdown row shadow-sm <?php 
                     if(isset($_GET['page'])){
                         if($_GET['page'] == "site"){
@@ -32,13 +32,13 @@
                             echo "text-light";
                         }
                     }
-                ?>" id="navbardrop" data-toggle="dropdown" >Construction sites</a>
+                ?>" id="navbardrop" data-toggle="dropdown" >Projects</a>
                     <div id="show">
-                        <!-- Jquery bell after new construction site was created -->
+                        <!-- Jquery bell after new project site was created -->
 
                     </div>
                     <div class="dropdown-menu">
-                        <!-- Including all created construction sites -->
+                        <!-- Including all created Projects -->
                         <div id="newSites" class=""></div>
                         <script>
                             $(document).ready(function(){
@@ -55,23 +55,77 @@
                         </a>
                     </div>
                 </li>
-                <!-- Users button --> 
+                <!-- Team button --> 
                 <li class="nav-item row shadow-sm <?php 
                     if(isset($_GET['page'])){
-                        if($_GET['page'] == "users"){
+                        if($_GET['page'] == "team"){
                             echo "bg-dark";
                             echo " text-light";
                         }
                     }
                 ?>">
                     <i class="fas fa-users-cog icon-size p-2"></i>
-                    <a href="admin_panel.php?page=users" class="nav-link ml-2 text-black <?php
+                    <a href="admin_panel.php?page=team" class="nav-link ml-2 text-black <?php
                     if(isset($_GET['page'])){
-                        if($_GET['page'] == "users"){
+                        if($_GET['page'] == "team"){
                             echo "text-light";
                         }
                     }
-                    ?>">Users</a>
+                    ?>">Team</a>
+                </li>
+                <!-- Statistics button --> 
+                <li class="nav-item row shadow-sm <?php 
+                    if(isset($_GET['page'])){
+                        if($_GET['page'] == "statistic"){
+                            echo "bg-dark";
+                            echo " text-light";
+                        }
+                    }
+                ?>">
+                    <i class="far fa-chart-bar icon-size p-2"></i>
+                    <a href="admin_panel.php?page=statistic" class="nav-link ml-2 text-black <?php
+                    if(isset($_GET['page'])){
+                        if($_GET['page'] == "statistic"){
+                            echo "text-light";
+                        }
+                    }
+                    ?>">Statistic</a>
+                </li>
+                <!-- Shop button --> 
+                <li class="nav-item row shadow-sm <?php 
+                    if(isset($_GET['page'])){
+                        if($_GET['page'] == "shop"){
+                            echo "bg-dark";
+                            echo " text-light";
+                        }
+                    }
+                ?>">
+                    <i class="fas fa-store icon-size p-2"></i>
+                    <a href="admin_panel.php?page=shop" class="nav-link ml-2 text-black <?php
+                    if(isset($_GET['page'])){
+                        if($_GET['page'] == "shop"){
+                            echo "text-light";
+                        }
+                    }
+                    ?>">Shop</a>
+                </li>
+                <!-- Shop button --> 
+                <li class="nav-item row shadow-sm <?php 
+                    if(isset($_GET['page'])){
+                        if($_GET['page'] == "help"){
+                            echo "bg-dark";
+                            echo " text-light";
+                        }
+                    }
+                ?>">
+                    <i class="fas fa-question icon-size p-2"></i>
+                    <a href="admin_panel.php?page=help" class="nav-link ml-2 text-black <?php
+                    if(isset($_GET['page'])){
+                        if($_GET['page'] == "help"){
+                            echo "text-light";
+                        }
+                    }
+                    ?>">Help</a>
                 </li>
             </ul>
         </nav>
