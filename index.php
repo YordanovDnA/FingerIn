@@ -24,7 +24,7 @@
         <header class="">
             <!-- Administration panel Login -->
             <nav class="navbar navbar-expand-sm bg-light admin-nav-text shadow-sm m-0 p-0">
-                    <div class="col-2 m-0 p-0">
+                    <div class="col-3 m-0 p-0">
                         <ul class="navbar-nav ">
                             <li class="nav-item ml-5">
                                 <a href="" class="logo-text-size m-1">
@@ -35,7 +35,7 @@
                             
                         </ul>
                     </div>
-                    <div class="col-10 d-flex justify-content-end">
+                    <div class="col-9 d-flex justify-content-end">
 
                         <a href="?page=signin" class="p-2 text-success"><i class="fas fa-sign-in-alt  text-dark mr-1"></i>SignIn</a>
 
