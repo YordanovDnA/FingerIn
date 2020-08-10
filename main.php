@@ -12,7 +12,7 @@
                 include('login.html');
             }
             elseif ($_GET['page'] =="signup") {
-                include('register.html');
+                include('register.php');
             }
             elseif ($_GET['page']=='news') {
                 include('news.html');

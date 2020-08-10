@@ -1,3 +1,4 @@
+
 .text-black{
     color: #121416 ;
 }
@@ -15,6 +16,10 @@
 .icon-size{
 
     font-size: 20px;
+}
+
+.cursor-pointer:hover{
+    cursor: pointer !important;
 }
 
 body {
@@ -72,6 +77,8 @@ input{
 .logo-size{
     font-size:30px;
 }
+
 .logo-text-size{
     font-size:26px;
 }
+
