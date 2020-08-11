@@ -24,13 +24,13 @@
         <th class="">Email</th>
         <?php 
             include_once('../functions.php');
-            connectToDatabase();
+            connectToDatabase($_SESSION['Database']);
             $confirmUser = "'Do you want to change the Username?'";
             $confirmPass = "'Do you want to change the Password of the user?'";
             $confirmEmail = "'Do you want to change the Email of the user?'";
-            $tableconn = "SELECT ID, SiteName, Username, Password, Email FROM users";
+            $tableconn = "SELECT id, firstname, lastname, email FROM users";
             $result = $conn->query($tableconn);
-            if($result->num_rows){
+            if($result->num_rows > 0){
                 while($row = $result->fetch_assoc()){
                     echo '
                     <tr class="">

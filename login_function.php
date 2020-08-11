@@ -1,7 +1,6 @@
 <?php
         include_once('functions.php');
-        connectToDatabase();
-        echo $db
+        connectToDatabase("fingerprint");
         $name = $_POST["username"]; 
         $password = md5($_POST["password"]); 
 

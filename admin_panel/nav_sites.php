@@ -3,8 +3,9 @@
 New one
 </a> -->
 <?php 
+    session_start();
     include_once('../functions.php');
-    connectToDatabase();
+    connectToDatabase($_SESSION['Database']);
     $sql = "SELECT * FROM users" ;
     $result = $conn->query($sql);
     if($result-> num_rows > 0){

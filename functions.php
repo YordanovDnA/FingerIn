@@ -1,21 +1,13 @@
 <?php
 $servername= $username= $password= $db= $conn="" ;
 
-function connectToDatabase(){
-    if(isset($_SESSION['Database'])){
-        global $servername, $username, $password, $db, $conn ;
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $db = $_SESSION['Database'];
-    }
-    else{
-        global $servername, $username, $password, $db, $conn ;
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $db = "fingerprint";
-    }
+function connectToDatabase($database){
+    global $servername, $username, $password, $db, $conn ;
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $db = $database;
+
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $db);

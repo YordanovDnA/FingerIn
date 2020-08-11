@@ -1,11 +1,12 @@
 <?php
-    //Declare variations for all POST data
-    
+    include_once('functions.php');
+    connectToDatabase("fingerprint");
 
-    //If personal account is chosen
+    
     if($_SERVER['REQUEST_METHOD'] == "POST"){
         $username = $_POST['username'];
         $password = md5($_POST['password']);
+        //If personal account is chosen
         if(empty($_POST['companyName'])){
             $firstName = $_POST['firstName'];
             $lastName = $_POST['lastName'];
@@ -37,8 +38,21 @@
                 echo "Error creating database: " . mysqli_error($conn);
             }
             mysqli_close($conn);
-            
+            connectToDatabase($databaseName);
+            $sql = "CREATE TABLE users (
+                id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                firstname VARCHAR(30) NOT NULL,
+                lastname VARCHAR(30) NOT NULL,
+                email VARCHAR(50),
+                reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+                )";
+            if(mysqli_query($conn, $sql)) {
+
+            } else {
+                echo "Error creating database: " . mysqli_error($conn);
+            }
         }
+        //If company account is chosen
         elseif (!empty($_POST['companyName'])){
             $companyName = $_POST['companyName'];
             $email = $_POST['companyEmail'];
@@ -69,8 +83,7 @@
                 echo "Error creating database: " . mysqli_error($conn);
             }
             mysqli_close($conn);
-            //Create table
-
+            
         }
     
     
