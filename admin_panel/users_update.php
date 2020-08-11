@@ -1,5 +1,5 @@
 <?php
-require_once '../config.php';
+
     function updateRecordName(mysqli $db, $newName, $id){
         if(isset($newName)){
             $sql = "UPDATE `users` SET Username= '".$newName."' WHERE ID = '".$id."'";

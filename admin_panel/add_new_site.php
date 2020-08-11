@@ -1,5 +1,5 @@
 <?php
-    include_once('../config.php');
+    include_once('../functions.php');
     $newSiteName = $username = $password = $rpassword = "";
     $newSiteNameErr = $usernameErr = $passwordErr = $rpasswordErr = "";
     $passwordsNmErr = "";
@@ -43,6 +43,7 @@
         $_POST['password'] === $_POST['rpassword'] ){
                 /*When all field are correctly filled this code will execute
                 appending the information into the users database*/
+                connWithDatabase($_SESSION['database']);
                 $sql = "INSERT INTO users (SiteName, DatabaseName, Username, Password)
                 values('".$_POST['newSiteName']."', '$newSiteNameAdd', '$usernameAdd', '$passwordAdd')";  
                 if($conn->query($sql) === TRUE){

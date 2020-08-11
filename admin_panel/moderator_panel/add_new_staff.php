@@ -1,5 +1,5 @@
 <?php
-    include_once('../config.php');
+
     $newStaffName = "";
     $newStaffNameErr = "";
     $passwordsNmErr = "";

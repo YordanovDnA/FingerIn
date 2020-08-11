@@ -1,5 +1,5 @@
 <?php 
-    include_once('config.php');
+
     $username = $password = $rpassowrd = "";
     $usernameErr = $passwordErr = $rpasswordErr = "";
     $usernamefull = $passwordnm = "";

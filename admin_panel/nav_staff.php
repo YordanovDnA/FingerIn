@@ -3,7 +3,7 @@
 New one
 </a> -->
 <?php 
-    include_once('../config.php');
+
     $sql = "SELECT * FROM staff" ;
     $result = $conn->query($sql);
     if($result-> num_rows > 0){

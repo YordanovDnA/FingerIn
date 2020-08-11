@@ -23,13 +23,14 @@
         <th class="">Password</th>
         <th class="">Email</th>
         <?php 
+            include_once('../functions.php');
+            connectToDatabase();
             $confirmUser = "'Do you want to change the Username?'";
             $confirmPass = "'Do you want to change the Password of the user?'";
             $confirmEmail = "'Do you want to change the Email of the user?'";
-            include_once('../config.php');
             $tableconn = "SELECT ID, SiteName, Username, Password, Email FROM users";
             $result = $conn->query($tableconn);
-            if($result->num_rows > 0){
+            if($result->num_rows){
                 while($row = $result->fetch_assoc()){
                     echo '
                     <tr class="">
@@ -97,6 +98,9 @@
                     </script>
                     ';
                     }
+                }
+                else{
+                    echo"There are no users!";
                 }
                 ?>
     </table>

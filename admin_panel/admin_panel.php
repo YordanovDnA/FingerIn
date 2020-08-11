@@ -24,12 +24,13 @@
 <header class="">
     <?php 
     include('top-bar.php');
-    include("../config.php");
     ?>
 </header>
 <main class="mx-auto p-0 row col-12">
     <!-- Main Left section with the navigation -->
     <?php 
+    include_once('../functions.php');
+    connectToDatabase();
     if ($result = $conn -> query("SELECT Username, Privileges FROM users WHERE Username = '".$_SESSION['user']."' AND Privileges = 'moderator'  ")) {
         if($result -> num_rows>0){
             include('moderator_panel\navigation.php');
