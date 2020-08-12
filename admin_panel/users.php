@@ -28,8 +28,8 @@
             $confirmUser = "'Do you want to change the Username?'";
             $confirmPass = "'Do you want to change the Password of the user?'";
             $confirmEmail = "'Do you want to change the Email of the user?'";
-            $tableconn = "SELECT id, firstname, lastname, email FROM users";
-            $result = $conn->query($tableconn);
+            $sql = "SELECT * FROM users";
+            $result = $conn->query($sql);
             if($result->num_rows > 0){
                 while($row = $result->fetch_assoc()){
                     echo '
@@ -49,7 +49,7 @@
                                 </form>
                             </div>
                         </td> 
-                        <td class="">'.$row['SiteName'].'
+                        <td class="">'.$row['Project'].'
             
                         </td>
                         <td class="">******************
