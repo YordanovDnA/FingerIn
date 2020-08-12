@@ -29,22 +29,15 @@
 <main class="mx-auto p-0 row col-12">
     <!-- Main Left section with the navigation -->
     <?php 
-    include_once('../functions.php');
-    connectToDatabase("fingerprint");
-    if ($result = $conn -> query("SELECT Username, Privileges FROM users WHERE Username = '".$_SESSION['user']."' AND Privileges = 'moderator'  ")) {
-        if($result -> num_rows>0){
-            include('moderator_panel\navigation.php');
-        }
+    
+    if ($_SESSION['Privilages'] === "moderator") {
+        include('moderator_panel\navigation.php');
     }
-    if($result = $conn -> query("SELECT Username, Privileges FROM users WHERE Username = '".$_SESSION['user']."' AND Privileges = 'user'")){
-        if($result -> num_rows>0){
-            include('user_panel/navigation.php');
-        }
+    if($_SESSION['Privilages'] === "user"){
+        include('user_panel/navigation.php');   
     }
-    if($result = $conn -> query("SELECT Username, Privileges FROM users Where Username = '".$_SESSION['user']."' AND Privileges = 'admin' ")){
-        if($result -> num_rows>0){
-            include('navigation.php');
-        }
+    if($_SESSION['Privilages'] === "admin"){
+        include('navigation.php');
     }
     ?>
     <!--Main Right Section -->
