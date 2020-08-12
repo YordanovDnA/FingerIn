@@ -40,6 +40,7 @@
             mysqli_close($conn);
             connectToDatabase($databaseName);
             $sql = "CREATE TABLE users (
+                ID INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                 Project VARCHAR(30) NOT NULL,
                 Username VARCHAR(30) NOT NULL,
                 Password VARCHAR(300) NOT NULL,
