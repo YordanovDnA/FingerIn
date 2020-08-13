@@ -5,7 +5,7 @@
             include('navigation.php');
     ?>
     <!--Main Right Section -->
-    <section class="col-10">
+    <section class="col-10 vh90">
         <?php
         if(isset($_GET['page'])){
             if($_GET['page']== 'signin'){

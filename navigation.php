@@ -1,4 +1,4 @@
-<section class="col-2 shadow-sm admin-nav-text">
+<section class="col-2 shadow-sm admin-nav-text 90vh">
         <nav class="nav-bar">
             <ul class="navbar-nav">
 

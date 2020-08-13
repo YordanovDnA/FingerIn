@@ -5,6 +5,7 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Fingerprint signin/out system</title>
+            <link rel="stylesheet" href="css/main.css">
             <!-- Latest compiled and minified CSS -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
             
@@ -18,7 +19,7 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
             <!-- Font Awsome -->
             <script src="https://kit.fontawesome.com/d6c9141bcd.js" crossorigin="anonymous"></script>
-            <link rel="stylesheet" media="all" href="css/style.css">
+            
         </head>
         <body>
         <header class="">
@@ -44,8 +45,12 @@
             </nav>
         </header>
             <?php include "main.php" ?>
-            <footer class="">
-            
+            <footer class="shadow">
+            <ul>
+                <li class="inline"><a href="#">Quick links</a>|</li>
+                <li class="inline"><a href="#">Link</a>|</li>
+                <li class="inline">&copy; 2020 FingerIn</li>
+            </ul>
             </footer>
             <script src="js/main.js"></script>
         </body>
