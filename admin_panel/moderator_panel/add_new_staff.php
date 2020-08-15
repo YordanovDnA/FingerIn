@@ -1,5 +1,5 @@
 <?php
-
+    include_once(' ../../functions.php');
     $newStaffName = "";
     $newStaffNameErr = "";
     $passwordsNmErr = "";
@@ -21,7 +21,8 @@
         if(!empty($_POST['newStaffName']) ){
                 /*When all field are correctly filled this code will execute
                 appending the information into the staff database*/
-                $sql = "INSERT INTO staff (CompanyName, DatabaseName, AddedBy)
+                connectToDatabase($_SESSION['Database']);
+                $sql = "INSERT INTO Staff (CompanyName, TableName, AddedBy)
                 values('".$_POST['newStaffName']."', '$newStaffNameAdd', '$AddedBy')";  
                 if($conn->query($sql) === TRUE){
                     //Success Alert when registration is success
@@ -36,7 +37,7 @@
                     echo "Error: " .$conn->error;
                 }
                 //Create new database with the name of the new site.
-                $newdb = "CREATE DATABASE `$newStaffNameAdd`";
+                $newdb = "CREATE TABLE `$newStaffNameAdd`";
                 if($conn->query($newdb) === FALSE){
                     echo "Error creating database: " .$conn->error;
                 }
