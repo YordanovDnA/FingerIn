@@ -1,6 +1,19 @@
-<section class="col-2 shadow-sm admin-nav-text">
-        <nav class="nav-bar">
+   <nav class="nav-bar">
             <ul class="navbar-nav">
+                <div class="col-lg-none col-xlg-none">
+                    <li class="nav-item row shadow-sm ">
+                        <i class="icon-size fas fa-user p-2"></i>
+                        <?php
+                        echo '<div class="mt-2 ml-3">
+                            <div class="dropdown">
+                                <a href="#" class="mr-5  text-uppercase dropdown-toggle" data-toggle="dropdown">'.$_SESSION['user'].'</a>
+                                <div style="min-width: 4rem" class="dropdown-menu m-0 p-0">
+                                    <a onclick="return confirm(', "'Do you really want to logout?'", ')" href="../logout.php" class="dropdown-item small m-0 p-0 text-center">Logout</a>
+                                </div>
+                            </div>';
+                        ?>
+                        </li>
+                </div>
                 <!-- Dashboard button -->
                 <li class="nav-item row shadow-sm <?php 
                     if(isset($_GET['page'])){
@@ -74,5 +87,4 @@
                     ?>">Users</a>
                 </li>
             </ul>
-        </nav>
-    </section>
+</nav>

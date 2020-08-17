@@ -77,4 +77,16 @@ function passwordMatch(){
 
 }
 
+function show(id){
+    var item = document.getElementById(id);
+    if(item.style.display === "none"){
+        item.style.display = "block";
+    }
+    else{
+        item.style.display = "none";
+    }
+}
 
+function myFunction(){
+    console.log(true);
+}

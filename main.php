@@ -1,11 +1,19 @@
 <main class="mx-auto p-0 row col-12">
     <!-- Main Left section with the navigation -->
-    <?php
-
-            include('navigation.php');
-    ?>
+    <section class="col-xl-2 col-lg-3 col-md-none col-sm-none col-none shadow-sm admin-nav-text 90vh">
+        <?php
+                include('navigation.php');
+        ?>
+    </section>
     <!--Main Right Section -->
-    <section class="col-10 vh90">
+    <div id="nav-modal" style="display: none" class="nav-sm w-100 h-100">
+        <div class="nav-modal-inner bg-light p-3 col-9 col-sm-5 col-md-4"> 
+            <?php
+            include('navigation.php');
+            ?>
+        </div>
+    </div>
+    <section class="col-xl-10 col-lg-8 col-md-12 vh90">
         <?php
         if(isset($_GET['page'])){
             if($_GET['page']== 'signin'){

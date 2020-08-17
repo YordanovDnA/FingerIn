@@ -2,6 +2,10 @@
     display: inline !important;
 }
 
+.icon-text{
+    font-size: 24px;
+}
+
 .text-black{
     color: #121416 ;
 }
@@ -39,6 +43,81 @@ body {
 
 section>nav>ul>li:hover{
     background-color: #f2f2f2;
+}
+
+.nav-sm{
+    background-color: rgba(0,0,0,0.83);
+    position: absolute;
+    z-index: 1;
+}
+
+
+.nav-modal-inner{
+    height: 100%;
+    margin-left: auto;
+}
+
+.d-block {
+    display: block;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .col-xlg-none{
+        display: none !important;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .col-lg-none{
+        display: none !important;
+    }
+    @media screen and (max-width: 992px) {
+        .col-lg-none{
+            display: flex;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .col-md-none{
+        display: none;
+    }
+    @media screen and (max-width: 768px) {
+        .col-md-none{
+            display: flex;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .col-sm-none{
+        display: none;
+    }
+    @media screen and (max-width: 576px) {
+        .col-sm-none{
+            display: flex;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .col-none{
+        display: none;
+    }
+}
+
+
+
+
+/* Responsive design for navigation  */
+@media screen and (min-width: 992px) {
+    #tab-nav-btn{
+        display: none;
+    }
 }
 
 input{
