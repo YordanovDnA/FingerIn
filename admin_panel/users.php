@@ -1,5 +1,5 @@
 <div class="container col-10 m-0 p-0">
-<?php
+    <?php
     if(isset($_GET['success'])){
         if($_GET['success'] == "true"){
             echo '<div class="position-absolute col-12  text-center alert alert-success alert-dismissible">
@@ -104,7 +104,7 @@
                 }
                 ?>
     </table>
-    
+
 </div>
-                <?php
+<?php
                 ?>

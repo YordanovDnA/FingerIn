@@ -49,6 +49,7 @@ function updateRecordPass(mysqli $db, $newPass, $id){
         }
     }
 } 
+
 //Function to update the email into the database
 function updateRecordEmail(mysqli $db, $newEmail, $id){
     if(isset($newEmail)){

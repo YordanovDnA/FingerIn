@@ -1,5 +1,4 @@
 <?php 
-
     $username = $password = $rpassowrd = "";
     $usernameErr = $passwordErr = $rpasswordErr = "";
     $usernamefull = $passwordnm = "";

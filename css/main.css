@@ -1,177 +1,192 @@
-.inline{
-    display: inline !important;
+.inline {
+  display: inline !important;
 }
 
-.icon-text{
-    font-size: 24px;
+.icon-text {
+  font-size: 24px;
 }
 
-.text-black{
-    color: #121416 ;
+.text-black {
+  color: #121416;
 }
 
-.text-black:hover{
-    color: #121416 ;
+.text-black:hover {
+  color: #121416;
 }
 
-.rg-lg-form{
-    width: 360px;
+.rg-lg-form {
+  width: 360px;
 }
 
-.admin-nav-text{
-
-    font-size: 13px ;
+.admin-nav-text {
+  font-size: 13px;
 }
 
-.icon-size{
-
-    font-size: 20px;
+.icon-size {
+  font-size: 20px;
 }
 
-.cursor-pointer:hover{
-    cursor: pointer !important;
+.cursor-pointer:hover {
+  cursor: pointer !important;
 }
 
 body {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
 
-.vh90{
-    min-height: 90vh;
+.vh90 {
+  min-height: 90vh;
 }
 
-section>nav>ul>li:hover{
-    background-color: #f2f2f2;
+section > nav > ul > li:hover {
+  background-color: #f2f2f2;
 }
 
-.nav-sm{
-    background-color: rgba(0,0,0,0.83);
-    position: absolute;
-    z-index: 1;
+.nav-sm {
+  background-color: rgba(0, 0, 0, 0.83);
+  position: absolute;
+  z-index: 1;
 }
 
-
-.nav-modal-inner{
-    height: 100%;
-    margin-left: auto;
+.nav-modal-inner {
+  height: 100%;
+  margin-left: auto;
 }
 
 .d-block {
-    display: block;
+  display: block;
 }
-
 
 @media screen and (min-width: 1200px) {
-    .col-xlg-none{
-        display: none !important;
-    }
+  .col-xlg-none {
+    display: none !important;
+  }
 }
 
-
 @media screen and (max-width: 1200px) {
-    .col-lg-none{
-        display: none !important;
+  .col-lg-none {
+    display: none !important;
+  }
+  @media screen and (max-width: 992px) {
+    .col-lg-none {
+      display: flex;
     }
-    @media screen and (max-width: 992px) {
-        .col-lg-none{
-            display: flex;
-        }
-    }
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .col-md-none{
-        display: none;
+  .col-md-none {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    .col-md-none {
+      display: flex;
     }
-    @media screen and (max-width: 768px) {
-        .col-md-none{
-            display: flex;
-        }
-    }
+  }
 }
 
-
-
 @media screen and (max-width: 768px) {
-    .col-sm-none{
-        display: none;
+  .col-sm-none {
+    display: none;
+  }
+  @media screen and (max-width: 576px) {
+    .col-sm-none {
+      display: flex;
     }
-    @media screen and (max-width: 576px) {
-        .col-sm-none{
-            display: flex;
-        }
-    }
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .col-none{
-        display: none;
-    }
+  .col-none {
+    display: none;
+  }
 }
-
-
-
 
 /* Responsive design for navigation  */
 @media screen and (min-width: 992px) {
-    #tab-nav-btn{
-        display: none;
-    }
+  #tab-nav-btn {
+    display: none;
+  }
 }
 
-input{
-    font-size: 10px !important;
+input {
+  font-size: 10px !important;
 }
-#dbtext{
-    z-index: 1;
+#dbtext {
+  z-index: 1;
 }
 
 #show {
-    opacity: 0;
-    animation: 1s show ease-in-out ;
-    animation-duration: 15s;
-  }
-  
+  opacity: 0;
+  animation: 1s show ease-in-out;
+  animation-duration: 15s;
+}
+
 @keyframes show {
-0% { opacity: 0; }
-20% { opacity: 1; }
-80% { opacity:1; }
-100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .item {
-    font-size: 20px;
-    color: #28a745;
-    animation: 1s bell-vibrate ease-in-out infinite ;
+  font-size: 20px;
+  color: #28a745;
+  animation: 1s bell-vibrate ease-in-out infinite;
 }
-  
+
 @keyframes bell-vibrate {
-0% { transform: rotate(0); opacity:0; }
-4% { transform: rotate(8deg); color:#dc3545; opacity: 1; }
-8% { transform: rotate(-8deg); }
-12% { transform: rotate(8deg); }
-16% { transform: rotate(-8deg); }
-20% { transform: rotate(0); }
-100% { transform: rotate(0); }
+  0% {
+    transform: rotate(0);
+    opacity: 0;
+  }
+  4% {
+    transform: rotate(8deg);
+    color: #dc3545;
+    opacity: 1;
+  }
+  8% {
+    transform: rotate(-8deg);
+  }
+  12% {
+    transform: rotate(8deg);
+  }
+  16% {
+    transform: rotate(-8deg);
+  }
+  20% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
-.hover-light:hover{
-    background-color: white;
+.hover-light:hover {
+  background-color: white;
 }
 
-.logo-size{
-    font-size:30px;
+.logo-size {
+  font-size: 30px;
 }
 
-.logo-text-size{
-    font-size:26px;
+.logo-text-size {
+  font-size: 26px;
 }
 
-footer{
-    min-height: 5vh;
+footer {
+  min-height: 5vh;
 }
 
-footer> ul {
-    text-align: center;
+footer > ul {
+  text-align: center;
 }

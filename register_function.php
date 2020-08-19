@@ -1,7 +1,6 @@
 <?php
     include_once('functions.php');
     connectToDatabase("fingerprint");
-
     
     if($_SERVER['REQUEST_METHOD'] == "POST"){
         $username = $_POST['username'];
@@ -84,10 +83,7 @@
                 echo "Error creating database: " . mysqli_error($conn);
             }
             mysqli_close($conn);
-            
         }
-    
-    
     }
     
 ?>

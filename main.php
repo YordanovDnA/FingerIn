@@ -7,7 +7,7 @@
     </section>
     <!--Main Right Section -->
     <div id="nav-modal" style="display: none" class="nav-sm w-100 h-100">
-        <div class="nav-modal-inner bg-light p-3 col-9 col-sm-5 col-md-4"> 
+        <div class="nav-modal-inner bg-light p-3 col-9 col-sm-5 col-md-4">
             <?php
             include('navigation.php');
             ?>
@@ -42,5 +42,5 @@
             include('home.html');
         }
          ?>
-     </section>
+    </section>
 </main>

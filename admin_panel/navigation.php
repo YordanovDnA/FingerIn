@@ -3,7 +3,7 @@
         <!-- Dashboard button -->
         <div class="col-lg-none col-xlg-none">
             <li class="row nav-item shadow-sm ">
-            <i class="icon-size fas fa-user p-2"></i>
+                <i class="icon-size fas fa-user p-2"></i>
                 <?php
                 echo '<div class="mt-2 ml-3">
                             <div class="dropdown">
@@ -46,7 +46,7 @@
                     echo "text-light";
                 }
             }
-        ?>" id="navbardrop" data-toggle="dropdown" >Projects</a>
+        ?>" id="navbardrop" data-toggle="dropdown">Projects</a>
             <div id="show">
                 <!-- Jquery bell after new project site was created -->
 
@@ -55,21 +55,21 @@
                 <!-- Including all created Projects -->
                 <div id="newSites" class=""></div>
                 <script>
-                    $(document).ready(function(){
-                        setInterval(function(){
-                            $("#newSites").load("nav_sites.php");
-                            refresh();
-                        }, 1000);
-                    });
+                $(document).ready(function() {
+                    setInterval(function() {
+                        $("#newSites").load("nav_sites.php");
+                        refresh();
+                    }, 1000);
+                });
                 </script>
-                <!-- Add new construction site button --> 
+                <!-- Add new construction site button -->
                 <a href="admin_panel.php?page=site" class="dropdown-item">
                     <i class="fas fa-plus icon-size p-2"></i>
                     Add
                 </a>
             </div>
         </li>
-        <!-- Team button --> 
+        <!-- Team button -->
         <li class="nav-item row shadow-sm <?php 
             if(isset($_GET['page'])){
                 if($_GET['page'] == "team"){
@@ -87,7 +87,7 @@
             }
             ?>">Team</a>
         </li>
-        <!-- Statistics button --> 
+        <!-- Statistics button -->
         <li class="nav-item row shadow-sm <?php 
             if(isset($_GET['page'])){
                 if($_GET['page'] == "statistic"){
@@ -105,7 +105,7 @@
             }
             ?>">Statistic</a>
         </li>
-        <!-- Shop button --> 
+        <!-- Shop button -->
         <li class="nav-item row shadow-sm <?php 
             if(isset($_GET['page'])){
                 if($_GET['page'] == "shop"){
@@ -123,7 +123,7 @@
             }
             ?>">Shop</a>
         </li>
-        <!-- Shop button --> 
+        <!-- Shop button -->
         <li class="nav-item row shadow-sm <?php 
             if(isset($_GET['page'])){
                 if($_GET['page'] == "help"){
